@@ -1,0 +1,152 @@
+/* Styling dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Header dan Navigasi */
+.header {
+    margin-bottom: 20px;
+    border: 1px solid #000;
+}
+
+.browser-bar {
+    background-color: #0abaff;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    font-size: 0.9em;
+}
+
+.nav-bar {
+    background-color: #f8f8f8;
+    padding: 8px 10px;
+    display: flex;
+    gap: 15px; /* Memberi jarak antar link */
+    border-top: 1px solid #fff; /* Efek visual pemisah */
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9em;
+    padding: 2px 5px;
+    border-right: 1px solid #ccc; /* Pemisah visual antar menu */
+}
+.nav-bar a:last-child {
+    border-right: none;
+}
+
+/* Konten Utama (Kiri dan Kanan) */
+.main-content {
+    display: flex;
+    gap: 20px;
+}
+
+.left-panel {
+    flex: 0 0 200px; /* Lebar tetap untuk panel kiri */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10px; /* Jarak dari form di kanan */
+}
+
+.image-box {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    font-size: 0.9em;
+}
+
+.main-p{
+    padding: 5px 20px;
+    background-color: #ccc;
+    border: 1px solid #000;
+    cursor: pointer;
+    position: fixed;
+    bottom: 300px;
+}
+
+.right-panel {
+    flex-grow: 1; /* Mengambil sisa ruang */
+}
+
+/* Styling Formulir */
+.form-row {
+    display: flex;
+    margin-bottom: 8px;
+    align-items: flex-start; /* Untuk baris dengan checkbox/instruksi */
+}
+
+.form-row label:first-child {
+    flex: 0 0 150px; /* Lebar tetap untuk label */
+    padding-top: 4px; /* Penyesuaian vertikal */
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    flex-grow: 1;
+    padding: 4px;
+    border: 1px solid #000;
+    font-size: 0.9em;
+}
+
+.instruction {
+    font-size: 0.8em;
+    color: #666;
+    margin: 0 0 4px 0;
+    padding-top: 0;
+    flex-basis: 100%; /* Agar instruksi memenuhi baris */
+}
+
+.transaction-section select {
+    flex-basis: auto; /* Biarkan select kecil */
+    width: 60px;
+}
+
+.send-options div {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+}
+
+.send-options input[type="checkbox"] {
+    margin-right: 5px;
+    flex-grow: 0;
+    width: auto;
+    border: none;
+}
+
+/* Tombol Generate */
+.button-row {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.generate-btn {
+    padding: 8px 15px;
+    background-color: #d0e0ff; /* Warna biru muda */
+    border: 1px solid #000;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
